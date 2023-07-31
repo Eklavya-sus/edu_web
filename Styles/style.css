@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  background-image: url(/styles/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 600px;
+}
+
+.menu_bar {
+  background-color: white;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+.menu_bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu_bar ul li {
+  margin: 1rem;
+  align-items: right;
+}
+.menu_bar ul li a {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: ease-in-out 0.2s;
+}
+.menu_bar ul li a:hover {
+  color: hsl(233, 26%, 24%);
+  font-weight: 700;
+}
+
+.dropdown__menu {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: hsl(233, 26%, 24%) ;
+  border: hsl(233, 26%, 24%) solid 1px;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.2s ease, opacity 0.2s ease;
+}
+.menu_bar ul li:hover .dropdown__menu {
+  max-height:20rem; /* Set a reasonable value for the max-height */
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown__menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.dropdown__menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+.fas {
+  float: right;
+  margin-left: 2px;
+  padding-top: 5px;
+}
+.search-bar {
+  margin-left: 50px;
+  margin-top: 5px;
+  border: 1px solid hsl(233, 26%, 24%);
+}
+.homepage{
+  display: flex;
+}
+.homepage-intro{
+  display: flex;
+  height: 100vh;
+  padding: 10rem 7rem;
+  flex-direction: column;
+}
+.homepage-image{
+  height: 40rem;
+  max-width: 50rem;
+}
+.mHeading {
+  position: absolute;
+  max-width: 35rem;
+  color: hsl(233, 26%, 24%);
+  /* line-height: 3rem; */
+  font-weight: 400;
+}
+
+.searchbar {
+  height: 27px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px solid hsl(233, 26%, 24%);
+  text-align: left;
+  color: black;
+  padding: 10px;
+}
+.heading2{
+  max-width: 35rem;
+  margin-top: 9rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(233, 8%, 62%);
+}
+#login_button{
+  max-width: 10rem;
+  margin-top: 2rem;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(to bottom right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: white;
+  font-weight: 700;
+}
+#login_button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer{
+  background-color: hsl(233, 26%, 24%);
+  height: 30vh;
+  color: white;
+  padding: 50px 200px;
+  display: flex;
+  gap: 6rem;
+}
+.footer ul {
+  list-style: none;
+  line-height: 3rem;
+}
+.footer ul li:hover{
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}

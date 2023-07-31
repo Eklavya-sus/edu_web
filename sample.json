@@ -1,0 +1,45 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "user123",
+        "email": "user123@example.com",
+        "password": "password123",
+        "uploadedVideos": [1, 2]
+      },
+      {
+        "id": 2,
+        "username": "john_doe",
+        "email": "john.doe@example.com",
+        "password": "john123",
+        "uploadedVideos": [3]
+      }
+    ],
+    "videos": [
+      {
+        "id": 1,
+        "title": "Introduction to Mathematics",
+        "description": "Learn the basics of mathematics in this introductory course.",
+        "tags": ["math", "education", "beginner"],
+        "uploadedBy": 1,
+        "uploadedDate": "2023-07-31"
+      },
+      {
+        "id": 2,
+        "title": "Web Development Fundamentals",
+        "description": "Get started with web development and build your first website.",
+        "tags": ["web development", "HTML", "CSS", "JavaScript"],
+        "uploadedBy": 1,
+        "uploadedDate": "2023-07-30"
+      },
+      {
+        "id": 3,
+        "title": "Introduction to Physics",
+        "description": "Explore the fascinating world of physics and its fundamental concepts.",
+        "tags": ["physics", "science", "education"],
+        "uploadedBy": 2,
+        "uploadedDate": "2023-07-29"
+      }
+    ]
+  }
+  
