@@ -46,7 +46,7 @@ body{
 }
 .menu_bar ul li a:hover {
   color: hsl(233, 26%, 24%);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .dropdown__menu {
