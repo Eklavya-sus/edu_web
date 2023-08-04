@@ -1,0 +1,31 @@
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .course-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .course-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .course-description {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            font-size: 12px;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .uploaded-info {
+            font-size: 12px;
+        }
+  

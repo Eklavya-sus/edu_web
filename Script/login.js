@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (matchingUser) {
                     console.log("Login successful!")
                     alert("Login successful!");
+                    window.location.href = 'dashboard.html';
                   
 
                 } else {

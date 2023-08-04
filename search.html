@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Search Page</title>
+    <link rel="stylesheet" href="/Styles/search.css">
+</head>
+<body>
+
+<div class="search" role="search">
+    <input type="text" name="search" placeholder="Search" class="quicksearch" aria-label="Search">
+  </div>
+  
+  <div class="button-group" data-filter-group="category">
+    <button class="button is-checked" data-filter="all">All Categories</button>
+    <button class="button" data-filter="category1">Category 1</button>
+    <button class="button" data-filter="category2">Category 2</button>
+    <button class="button" data-filter="category3">Category 3</button>
+  </div>
+  
+  <div class="grid">
+    <div class="tile category1">
+      <h2 class="name">Introduction to Mathematics</h2>
+      <p>Learn the basics of mathematics in this introductory course.</p>
+    </div>
+    <div class="tile category2 category3">
+      <h2 class="name">Web Development Fundamentals</h2>
+      <p>Get started with web development and build your first website.</p>
+    </div>
+    <div class="tile category3">
+      <h2 class="name">Introduction to Physics</h2>
+      <p>Explore the fascinating world of physics and its fundamental concepts.</p>
+    </div>
+  </div>
+<script src="/Script/search.js"  ></script>
+</body>
+</html>
